@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.9" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="com.gene.sample.Customer_View" project="VendingMachineEmulator" 
+    file="/VendingMachineEmulator/src/com/gene/sample/Customer_View.java" binary="false" label="customer_View" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="241" y="0"/>    
+    <execution id="2">      
+      <position height="194" width="114" x="5" y="159"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="403" width="114" x="5" y="423"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="7" x="59" y="700"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="784"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="219" width="114" x="5" y="880"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="21" width="7" x="59" y="1015"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="7" x="59" y="269"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="com.gene.sample.VendingMachine_Controller" project="VendingMachineEmulator" 
+    file="/VendingMachineEmulator/src/com/gene/sample/VendingMachine_Controller.java" binary="false" 
+    label="vendingMachine_Controller" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="252" y="0"/>    
+    <execution id="4">      
+      <position height="152" width="179" x="123" y="180"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="63" width="179" x="123" y="444"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="267" width="7" x="209" y="475"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="7" x="212" y="624"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="177" width="179" x="123" y="901"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="com.gene.sample.Inventory_Model" project="VendingMachineEmulator" 
+    file="/VendingMachineEmulator/src/com/gene/sample/Inventory_Model.java" binary="false" label="inventory_Model" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="395" y="0"/>    
+    <execution id="20">      
+      <position height="110" width="116" x="306" y="201"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="21" width="7" x="361" y="243"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="116" x="306" y="465"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="170" width="7" x="361" y="496"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="543"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="21" width="0" x="0" y="590"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="135" width="116" x="306" y="922"/>    
+    </execution>    
+    <execution id="40">      
+      <position height="21" width="0" x="0" y="978"/>    
+    </execution>  
+  </object>  
+  <object id="42" language="java" name="com.gene.sample.StockBoy_FactoryPattern" project="VendingMachineEmulator" 
+    file="/VendingMachineEmulator/src/com/gene/sample/StockBoy_FactoryPattern.java" binary="false" 
+    label="stockBoy_FactoryPattern" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="631" y="0"/>    
+    <execution id="31">      
+      <position height="63" width="168" x="426" y="222"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="powerOn(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="putMoneyIn(double):void" asynchronous="false">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="getItem(java.lang.String):items.AbstractItem" asynchronous="false">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="continueOrNot(com.gene.sample.VendingMachine_Controller,java.io.BufferedReader):boolean" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="14" operation="cashOutAndGetChange():void" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="19" operation="add(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="putMoneyIn(double):void" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="getItemByName(java.lang.String):items.AbstractItem" asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" asynchronous="false">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="27" operation="cashOutAndGetChange():double" asynchronous="false">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="30" operation="createInventory(java.lang.String):items.AbstractItem" asynchronous="false" x="370" y="195">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" asynchronous="false">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="34" operation="checkSufficientFunds(items.AbstractItem,int):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="checkSufficientQuantity(java.lang.String,int):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" asynchronous="false">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="39" operation="getCashInSystem():double" asynchronous="false">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="40"/>  
+  </message>  
+  <message id="41" asynchronous="false">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="43" operation="setQuantityForItem(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>
+</sequence-diagram>
