@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 import items.AbstractItem;
 
+//Test
 public class Customer_View {
 
 	public static void main(String[] args) throws IOException {
