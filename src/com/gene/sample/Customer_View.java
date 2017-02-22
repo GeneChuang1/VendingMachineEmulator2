@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 import items.AbstractItem;
 
-//Test
+//http://localhost:8080/github-webhook/
 public class Customer_View {
 
 	public static void main(String[] args) throws IOException {
